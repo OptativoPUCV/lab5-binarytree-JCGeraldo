@@ -236,3 +236,29 @@ Sat 11 May 2024 02:30:36 AM UTC:
  tests:  22|2
 total_score: 50/70
 d7e64ba
+Sat 11 May 2024 02:35:41 AM UTC: 
+ treemap.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:171:80: error: expected ‘)’ before ‘{’ token
+  171 |         if(aux->parent&&tree->lower_than(aux->pair->key,aux->parent->pair->key){
+      |           ~                                                                    ^
+      |                                                                                )
+treemap.c:193:1: error: expected expression before ‘}’ token
+  193 | }
+      | ^
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+62c8e24
