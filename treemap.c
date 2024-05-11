@@ -162,7 +162,6 @@ Pair * upperBound(TreeMap * tree, void* key) {
             aux=aux->left;
         }
         else{
-            if(tree->lower_than(key, aux->pair->key))ub_node = aux;
             aux = aux-> right;
         }
     }
