@@ -168,12 +168,12 @@ Pair * nextTreeMap(TreeMap * tree) {
         return tree->current->pair;
     }
     else{
-        while(tree->lower_than(aux->pair->key,aux->parent->pair->key)){
+        while(tree->lower_than(aux->parent->pair->key,aux->pair->key)){
             aux = aux->parent;
             if(aux->parent == NULL) break;
         }
-        if(aux == tree->current)return NULL;
-        tree->current=aux;
+        if(aux == tree->current || aux->parent==NULL)return NULL;
+        tree->current=aux->parent;
         return tree->current->pair;
     }
     
