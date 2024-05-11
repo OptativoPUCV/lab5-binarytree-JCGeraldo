@@ -287,3 +287,17 @@ Sat 11 May 2024 02:36:57 AM UTC:
  tests:  25|1
 total_score: 60/70
 b6a1fe5
+Sat 11 May 2024 02:44:59 AM UTC: 
+ treemap.c | 36 ++++++++++++++++++------------------
+ 1 file changed, 18 insertions(+), 18 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:155:5: error: expected identifier or ‘(’ before ‘while’
+  155 |     while (aux != NULL){
+      |     ^~~~~
+treemap.c:153:16: error: unused variable ‘aux’ [-Werror=unused-variable]
+  153 |     TreeNode * aux = tree->root;
+      |                ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0e32b73
