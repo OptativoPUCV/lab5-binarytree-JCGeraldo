@@ -307,3 +307,14 @@ Sat 11 May 2024 02:45:06 AM UTC:
  tests:  26|1
 total_score: 60/70
 3b0282d
+Sat 11 May 2024 02:48:34 AM UTC: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:168:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  168 |     return ub_node;
+      |            ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7cd0356
