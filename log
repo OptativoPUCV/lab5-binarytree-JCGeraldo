@@ -149,3 +149,9 @@ treemap.c:174:18: error: ‘tre’ undeclared (first use in this function); did 
 treemap.c:174:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2c5c051
+Sat 11 May 2024 02:20:02 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  24|2
+total_score: 55/70
+8c9e547
