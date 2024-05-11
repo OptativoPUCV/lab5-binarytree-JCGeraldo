@@ -137,3 +137,15 @@ Sat 11 May 2024 02:16:22 AM UTC:
  tests:  23|2
 total_score: 50/70
 d052029
+Sat 11 May 2024 02:19:59 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:174:18: error: ‘tre’ undeclared (first use in this function); did you mean ‘tree’?
+  174 |         if(aux ==tre->current) return NULL;
+      |                  ^~~
+      |                  tree
+treemap.c:174:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2c5c051
