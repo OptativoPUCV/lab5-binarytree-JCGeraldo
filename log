@@ -167,3 +167,16 @@ Sat 11 May 2024 02:22:39 AM UTC:
  tests:  24|2
 total_score: 55/70
 f585d7d
+Sat 11 May 2024 02:23:18 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:173:72: error: expected ‘;’ before ‘if’
+  173 |         }while(tree->lower_than(aux->pair->key,aux->parent->pair->key))
+      |                                                                        ^
+      |                                                                        ;
+  174 |         if(aux == tree->current)return NULL;
+      |         ~~                                                              
+Compilation failed
+ff6b0c7
