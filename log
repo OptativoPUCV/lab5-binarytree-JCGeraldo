@@ -230,3 +230,9 @@ treemap.c:163:30: note: expected ‘TreeMap *’ but argument is of type ‘Tree
 cc1: all warnings being treated as errors
 Compilation failed
 1d46347
+Sat 11 May 2024 02:30:36 AM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  22|2
+total_score: 50/70
+d7e64ba
