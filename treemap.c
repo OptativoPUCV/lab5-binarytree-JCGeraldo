@@ -177,7 +177,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             }
             tree->current = aux->parent;
         }
-        return tree->current->pair;
+        if(tree->current)return tree->current->pair;
         
         /*while(tree->lower_than(aux->parent->pair->key,aux->pair->key)){
             aux = aux->parent;
