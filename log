@@ -262,3 +262,17 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 62c8e24
+Sat 11 May 2024 02:36:08 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:175:89: error: expected ‘)’ before ‘{’ token
+  175 |             while(aux->parent && tree->lower_than(aux->parent->pair->key,aux->pair->key){
+      |                  ~                                                                      ^
+      |                                                                                         )
+treemap.c:179:9: error: expected expression before ‘}’ token
+  179 |         }
+      |         ^
+Compilation failed
+0ca5404
