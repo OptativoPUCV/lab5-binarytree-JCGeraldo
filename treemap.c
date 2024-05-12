@@ -138,9 +138,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             tree->current = aux;
             return aux->pair;
         }
-        else if(tree->lower_than(key, aux->pair->key)){
+        else if(tree->lower_than(key, aux->pair->key))
             aux=aux->left;
-        }
         else
             aux = aux-> right;
     }
@@ -161,9 +160,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
             ub_node=aux;
             aux=aux->left;
         }
-        else{
+        else
             aux = aux-> right;
-        }
     }
     return ub_node?ub_node->pair:NULL;
 }
